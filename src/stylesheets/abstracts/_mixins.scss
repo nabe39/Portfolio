@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+// Media-Query Mixin
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+// Flex
+@mixin flex(
+  $display: flex,
+  $direction: false,
+  $align: false,
+  $justify: false,
+  $wrap: false,
+  $gap: false, 
+  $flex: false,
+  $flex-basic: false
+) {
+  display: $display;
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $align {
+    align-items: $align;
+  }
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+  @if $gap {
+    gap: $gap;
+  }
+  @if $flex {
+    gap: $flex;
+  }
+  @if $flex-basic{
+    flex-basis: $flex-basic;
+  }
+}

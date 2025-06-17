@@ -1,0 +1,37 @@
+// Color --------
+$black: #2d2d2d;
+$white: #fff;
+$green: #009379;
+$red: #ff6250;
+$pink: #f3afa8;
+$gray: #f3f3f3;
+$yellow: #f7d684;
+
+// Text ----------
+
+// Desk
+$sizeH1: 100px;
+$sizeH2: 32px;
+$sizeSub: 20px;
+$sizeH3: 27px;
+
+
+$lineH2: 42px;
+$lineSub: 30px;
+$lineH3: 42px;
+
+// Mobile
+$sizeH1-mobile: 65px;
+
+// BreakPoint --------
+// Breakpoints
+
+$medium: 480px;
+$extra-lager: 1024px;
+
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-lager - 1px);
+
+// Padding --------
+$padding-desktop: 24px 42px;
+$padding-mobile: 24px;
