@@ -3,21 +3,15 @@
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  section {
-    padding: $padding-desktop;
-  }
+  padding: $padding-desktop;
 
   @include tablet {
     max-width: 1023px;
-    section {
-      padding: $padding-mobile;
-    }
+    padding: $padding-mobile;
   }
 
   @include mobile {
     max-width: inherit;
-    section {
-      padding: $padding-mobile;
-    }
+    padding: $padding-mobile;
   }
 }
