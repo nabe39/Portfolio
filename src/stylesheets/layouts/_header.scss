@@ -5,7 +5,6 @@
 header {
   // desktop
   @include flex($justify: space-between, $align: center);
-  padding: $padding-desktop;
 
   .img-main {
     width: 20%;
