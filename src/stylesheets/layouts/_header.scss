@@ -50,7 +50,6 @@ header {
 
   // mobile
   @include mobile {
-    padding: $padding-mobile;
     .img-main {
       width: 30%;
     }

@@ -4,14 +4,25 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: $padding-desktop;
+  main {
+    section {
+      padding: $padding-desktop;
+    }
+  }
 
   @include tablet {
     max-width: 1023px;
     padding: $padding-mobile;
+    h1 {
+      font-size: $sizeH1-mobile;
+    }
   }
 
   @include mobile {
     max-width: inherit;
     padding: $padding-mobile;
+    h1 {
+      font-size: $sizeH1-mobile;
+    }
   }
 }
