@@ -35,9 +35,9 @@ header {
         a {
           text-decoration: none;
           color: $black;
-          font-weight: 600;
+          // font-weight: 600;
           line-height: 42px;
-          font-size: 18px;
+          font-size: $sizeSub;
           white-space: nowrap;
         }
       }
