@@ -5,7 +5,7 @@ section {
   //desktop
   @include flex($justify: space-between);
   .introduction {
-    @include flex($direction: column, $justify: space-between);
+    @include flex($direction: column, $gap: 20px);
     max-width: 70%;
     .text-sub-mobile {
       display: none;
