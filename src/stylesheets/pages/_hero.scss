@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 //----------------- HERO PAGE -------------------//
-section {
+.hero {
   //desktop
   @include flex($justify: space-between);
   .introduction {
@@ -24,7 +24,7 @@ section {
 
   //mobile
   @include mobile {
-    figure {
+    .avatar {
       display: none;
     }
     @include flex($direction: column, $align: center);
