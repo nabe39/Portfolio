@@ -1,0 +1,14 @@
+<each loop="item in {{list}}">
+  <div class="skills-card card {{item.skillName}}">
+    <figure>
+      <img
+        src="./assets/images/{{item.imgSkill}}"
+        alt="{{item.imgSkill}}"
+      />
+    </figure>
+    <div class="text-wrapper">
+      <figcaption>{{item.nameSkill}}</figcaption>
+      <span>{{item.description}}</span>
+    </div>
+  </div>
+</each>
