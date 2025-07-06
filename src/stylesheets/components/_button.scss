@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.btn {
+  background-color: $black;
+  width: 100%;
+  max-width: 211px;
+  padding: 16px;
+  border: none;
+  color: white;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 600;
+  font-size: $sizeBtn;
+  white-space: nowrap;
+  cursor: pointer;
+  @include tablet {
+    font-size: $sizeBtn-mobile;
+  }
+  @include mobile {
+    font-size: $sizeBtn-mobile;
+  }
+}
