@@ -1,0 +1,43 @@
+@use "../abstracts/" as *;
+
+//----------------- HERO PAGE -------------------//
+.hero {
+  //desktop
+  @include flex($justify: space-between);
+  .introduction {
+    @include flex($direction: column, $gap: 20px);
+    max-width: 70%;
+    .text-sub-mobile {
+      display: none;
+    }
+  }
+
+  //tablet
+  @include tablet {
+    @include flex($direction: column, $align: center, $gap: 20px);
+    .introduction {
+      max-width: 100%;
+      @include flex($direction: column, $align: center, $gap: 20px);
+      text-align: center;
+    }
+  }
+
+  //mobile
+  @include mobile {
+    .avatar {
+      display: none;
+    }
+    @include flex($direction: column, $align: center);
+    .introduction {
+      max-width: 100%;
+      @include flex($direction: column, $align: center);
+      text-align: center;
+      .text-sub {
+        display: none;
+      }
+      .text-sub-mobile {
+        display: block;
+      }
+    }
+  }
+}
