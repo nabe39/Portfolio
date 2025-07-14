@@ -3,8 +3,17 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  gap: 60px;
   .card {
+
+    .btn {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+    
     @include flex($direction: column, $align: center);
     height: 100%;
     transition: all 0.3s ease;
@@ -26,7 +35,6 @@
         -webkit-box-orient: vertical;
         overflow: hidden; /* Ẩn phần dư */
         font-weight: 600;
-
       }
       span {
         display: -webkit-box;
