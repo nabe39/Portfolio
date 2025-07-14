@@ -1,0 +1,67 @@
+@use "../abstracts/" as *;
+
+//----------- Skills Page ------------//
+.skills {
+  @include flex($direction: column, $justify: stretch);
+  .soft-skills {
+    .skills-card {
+      gap: 10px;
+      figure {
+        max-width: 100px;
+      }
+      .text-wrapper {
+        align-items: center;
+        span {
+          text-align: center;
+        }
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ddd, transparent);
+    margin: 40px 0;
+    @include mobile {
+      margin: 24px 0;
+      height: 1px;
+    }
+  }
+
+  .tech-skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    .skills-card {
+      @include flex($direction: row, $gap: 30px, $align: flex-start);
+      figure {
+        max-width: 100px;
+      }
+      .text-wrapper {
+        figcaption {
+          font-size: $sizeH3;
+        }
+      }
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+      .skills-card {
+        @include flex($direction: column, $gap: 30px, $align: center);
+        figure {
+          max-width: 100px;
+        }
+        .text-wrapper {
+          align-items: center;
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
