@@ -1,0 +1,74 @@
+@use "../abstracts/" as *;
+
+//----------- Contact Page ----------//
+.contact {
+  @include flex($direction: column, $gap: 20px);
+  .title {
+    font-weight: 600;
+    font-size: $sizeH3;
+  }
+  &-context {
+    @include flex($gap: 100px);
+    .context {
+      @include flex($direction: column, $gap: 20px);
+      .contact-social {
+        @include flex($gap: 40px);
+        figure {
+          width: 5%;
+        }
+      }
+    }
+    .form {
+      width: 100%;
+      @include flex($direction: column, $gap: 20px);
+      .form-group {
+        width: 100%;
+        input {
+          width: 100%;
+          padding: 16px 20px;
+          border: none;
+          border-radius: 8px;
+          background-color: $gray;
+          &::placeholder {
+            color: #999;
+          }
+
+          &:focus {
+            outline: none;
+            background-color: #efefef;
+          }
+        }
+      }
+    }
+  }
+
+  // Tablet{
+  @include tablet {
+    &-context {
+      @include flex($direction: column, $gap: 50px);
+      .form {
+        @include flex($align: center);
+      }
+    }
+  }
+
+  //Mobile
+  @include mobile {
+    @include flex($align: center);
+    text-align: center;
+    &-context {
+      .context {
+        .contact-social {
+          @include flex($justify: center);
+          figure {
+            width: 10%;
+          }
+        }
+      }
+      @include flex($direction: column, $gap: 20px);
+      .form {
+        @include flex($align: center);
+      }
+    }
+  }
+}
