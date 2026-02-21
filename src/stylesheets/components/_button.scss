@@ -12,6 +12,31 @@
   font-size: $sizeBtn;
   white-space: nowrap;
   cursor: pointer;
+
+  // Transition effects
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  // Hover effects
+  &:hover {
+    background-color: lighten($black, 15%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  // Active effect
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  // Focus effect
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($black, 0.3);
+  }
+
   @include tablet {
     font-size: $sizeBtn-mobile;
   }

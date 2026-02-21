@@ -39,6 +39,32 @@ header {
           line-height: 42px;
           font-size: $sizeSub;
           white-space: nowrap;
+
+          &:hover {
+            color: #007bff;
+            background-color: rgba(0, 123, 255, 0.1);
+            transform: translateY(-2px);
+            padding: 10px;
+            border-radius: 10px;
+          }
+
+          // Active/current page effect
+          &.active {
+            color: #007bff;
+            font-weight: 600;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 80%;
+              height: 2px;
+              background: #007bff;
+              transform: translateX(-50%);
+              border-radius: 2px;
+            }
+          }
         }
       }
     }
