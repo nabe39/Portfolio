@@ -6,7 +6,7 @@ This is my personal portfolio website to showcase my skills, projects, and backg
 
 ## 🔗 Live Demo
 
-👉 [View Website](link)
+👉 [View Website](https://portfolio-opal-gamma-17.vercel.app/)
 
 ---
 
